@@ -21,6 +21,11 @@ namespace IntegrationAPI
                 return a * b;
             });
 
+            app.MapGet("/health", () =>
+            {
+                return Results.Ok("Healthy");
+            });
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

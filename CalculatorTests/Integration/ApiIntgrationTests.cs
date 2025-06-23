@@ -24,4 +24,15 @@ public class ApiIntegrationTests
 
         Assert.AreEqual("20", result);
     }
+
+    [TestMethod]
+    [TestCategory("Smoke")]
+    public async Task HealthCheck_ReturnsHealthStatus()
+    {
+        var response = await _client.GetAsync("/health");
+        var result = await response.Content.ReadAsStringAsync();
+
+        Assert.AreEqual("Healthy", result);
+        Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
+    }
 }

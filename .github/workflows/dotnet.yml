@@ -26,6 +26,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
 
+    - name: Run Smoke Test Only
+      run: dotnet test --no-build --filter TestCategory=Smoke --verbosity normal
+
     - name: Run Unit Tests Only
       run: dotnet test --no-build --filter TestCategory=Unit --verbosity normal
 
