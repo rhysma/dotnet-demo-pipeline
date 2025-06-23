@@ -8,7 +8,7 @@ namespace CalculatorTests
         public void Add_ReturnsCorrectSum()
         {
             var calculator = new Calculator();
-            var result = calculator.Add(2, 3);
+            var result = calculator.Add(2, 2);
             Assert.AreEqual(5, result);
         }
     }
