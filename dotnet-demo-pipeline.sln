@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-demo-pipeline", "dot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTests", "CalculatorTests\CalculatorTests.csproj", "{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationAPI", "IntegrationAPI\IntegrationAPI.csproj", "{16450561-1363-45FF-AE70-96C3FEEF1EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16450561-1363-45FF-AE70-96C3FEEF1EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16450561-1363-45FF-AE70-96C3FEEF1EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16450561-1363-45FF-AE70-96C3FEEF1EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16450561-1363-45FF-AE70-96C3FEEF1EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
