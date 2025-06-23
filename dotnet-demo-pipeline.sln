@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-demo-pipeline", "dotnet-demo-pipeline\dotnet-demo-pipeline.csproj", "{2C0322EB-160B-4EC1-817B-F36F48AF6A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTests", "CalculatorTests\CalculatorTests.csproj", "{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2C0322EB-160B-4EC1-817B-F36F48AF6A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0322EB-160B-4EC1-817B-F36F48AF6A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0322EB-160B-4EC1-817B-F36F48AF6A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F9CB47-C582-45AA-9B78-3FCCD34D3D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
