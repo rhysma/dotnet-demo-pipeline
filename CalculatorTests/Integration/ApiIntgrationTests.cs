@@ -19,7 +19,7 @@ public class ApiIntegrationTests
     [TestCategory("Integration")]
     public async Task Multiply_Endpoint_ReturnsCorrectResults()
     {
-        var response = await _client.GetAsync("/multiply?a=5&b=5");
+        var response = await _client.GetAsync("/multiply?a=4&b=5");
         var result = await response.Content.ReadAsStringAsync();
 
         Assert.AreEqual("20", result);
