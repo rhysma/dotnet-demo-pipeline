@@ -34,3 +34,6 @@ jobs:
 
     - name: Run Integration Tests Only
       run: dotnet test --no-build --filter TestCategory=Integration --verbosity normal
+
+    - name: Run Performance Tests Only
+      run: dotnet test --no-build --filter TestCategory=Performance --verbosity normal

@@ -35,4 +35,19 @@ public class ApiIntegrationTests
         Assert.AreEqual("\"Healthy\"", result);
         Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
     }
+
+    [TestMethod]
+    [TestCategory("Performance")]
+    public async Task MultiplyEndpoint_RespondsWithin500Milliseconds()
+    {
+        var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
+        var response = await _client.GetAsync("/multiply?a=10&b=20");
+
+        stopwatch.Stop();
+
+        Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode);
+        Assert.IsTrue(stopwatch.ElapsedMilliseconds < 500, $"Expected response time was under 500ms but was {stopwatch.ElapsedMilliseconds}ms");
+
+    }
 }
